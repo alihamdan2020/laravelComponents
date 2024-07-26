@@ -23,7 +23,7 @@ class Links extends Component
     {
         return <<<'blade'
 <div>
-    <!-- Walk as if you are kissing the Earth with your feet. - Thich Nhat Hanh -->
+   <a href="#">hello every one</a>
 </div>
 blade;
     }

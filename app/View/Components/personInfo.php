@@ -6,13 +6,14 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Buttons extends Component
+class personInfo extends Component
 {
-    public $title;
-
-    public function __construct($title)
+ public $user;
+ 
+    public function __construct($user)
     {
-        $this->title=$title;
+        $this->user=$user;
+        
     }
 
     /**
@@ -20,6 +21,6 @@ class Buttons extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.buttons');
+        return view('components.person-info');
     }
 }
